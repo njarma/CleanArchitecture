@@ -106,7 +106,7 @@ public class Startup
             endpoints.MapRazorPages();
         });
 
-/*         app.UseSpa(spa =>
+        app.UseSpa(spa =>
         {
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
@@ -118,6 +118,6 @@ public class Startup
                     //spa.UseAngularCliServer(npmScript: "start");
                     spa.UseProxyToSpaDevelopmentServer(Configuration["SpaBaseUrl"] ?? "http://localhost:4200");
             }
-        }); */
+        });
     }
 }

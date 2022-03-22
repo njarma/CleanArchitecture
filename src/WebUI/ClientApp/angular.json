@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Clean2.WebUI": {
+    "CleanArchitecture.WebUI": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Clean2.WebUI:build"
+            "browserTarget": "CleanArchitecture.WebUI:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Clean2.WebUI:build:production"
+              "browserTarget": "CleanArchitecture.WebUI:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Clean2.WebUI:build"
+            "browserTarget": "CleanArchitecture.WebUI:build"
           }
         },
         "test": {
@@ -138,7 +138,7 @@
         }
       }
     },
-    "Clean2.WebUI-e2e": {
+    "CleanArchitecture.WebUI-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -146,7 +146,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Clean2.WebUI:serve"
+            "devServerTarget": "CleanArchitecture.WebUI:serve"
           }
         },
         "lint": {
@@ -161,5 +161,5 @@
       }
     }
   },
-  "defaultProject": "Clean2.WebUI"
+  "defaultProject": "CleanArchitecture.WebUI"
 }
